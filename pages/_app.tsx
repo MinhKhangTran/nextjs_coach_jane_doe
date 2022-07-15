@@ -1,3 +1,4 @@
+import { GetStaticProps } from "next";
 import type { AppProps } from "next/app";
 
 import Layout from "../components/layout";
