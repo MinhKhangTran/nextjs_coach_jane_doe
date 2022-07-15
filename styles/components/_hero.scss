@@ -10,5 +10,9 @@
   }
   .socials {
     gap: 2rem;
+    padding-block: 2rem;
+    @include lg {
+      padding-block: 0rem;
+    }
   }
 }

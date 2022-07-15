@@ -39,7 +39,7 @@ const Hero = () => {
         <Col className="order-3 order-lg-1" lg={6}>
           <h1 className="text-warning | heading-1">{heroContent.title}</h1>
           <p className="text-dark | body-lg pt-3 pb-4">{heroContent.text}</p>
-          <Link href="/kontakt" passHref>
+          <Link href="/#kontakt" passHref>
             <Button size="lg" variant="primary">
               {heroContent.btnText}
             </Button>
@@ -60,7 +60,7 @@ const Hero = () => {
           />
         </Col>
         <Col className="order-2 order-lg-3" lg={1}>
-          <div className="socials | d-flex flex-column justify-content-center align-items-center h-100 ">
+          <div className="socials | d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 ">
             {socials.map((social) => {
               return (
                 <a
