@@ -1,0 +1,13 @@
+@use "sass:math";
+
+#welcome {
+  margin-top: math.div(64rem, 16);
+  @include md {
+    margin-top: math.div(104rem, 16);
+  }
+  p {
+    width: 90%;
+    max-width: 590px;
+    margin-inline: auto;
+  }
+}

@@ -37,13 +37,19 @@ const Hero = () => {
     <section className="wrapper" id="hero" aria-label="hero Abschnitt">
       <Row>
         <Col className="order-3 order-lg-1" lg={6}>
-          <h1 className="text-warning | heading-1">{heroContent.title}</h1>
-          <p className="text-dark | body-lg pt-3 pb-4">{heroContent.text}</p>
-          <Link href="/#kontakt" passHref>
-            <Button size="lg" variant="primary">
-              {heroContent.btnText}
-            </Button>
-          </Link>
+          <h1 className="text-warning | heading-1 text-center text-lg-start">
+            {heroContent.title}
+          </h1>
+          <p className="text-dark | body-lg pt-3 pb-4 text-center text-lg-start">
+            {heroContent.text}
+          </p>
+          <div className="d-flex justify-content-center justify-content-lg-start">
+            <Link className="" href="/#kontakt" passHref>
+              <Button size="lg" variant="primary">
+                {heroContent.btnText}
+              </Button>
+            </Link>
+          </div>
         </Col>
         <Col
           lg={5}
