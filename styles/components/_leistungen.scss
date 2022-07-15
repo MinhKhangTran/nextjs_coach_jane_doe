@@ -1,1 +1,16 @@
 @use "sass:math";
+
+#leistungen {
+  margin-top: math.div(64rem, 16);
+  @include md {
+    margin-top: math.div(104rem, 16);
+  }
+  .leistung__wrapper {
+    span {
+      height: 100%;
+    }
+    @include lg {
+      height: 400px;
+    }
+  }
+}
