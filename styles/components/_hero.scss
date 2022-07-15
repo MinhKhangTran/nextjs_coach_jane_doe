@@ -1,1 +1,14 @@
 @use "sass:math";
+
+#hero {
+  margin-top: math.div(64rem, 16);
+  @include md {
+    margin-top: math.div(104rem, 16);
+  }
+  .btn {
+    border-radius: 0;
+  }
+  .socials {
+    gap: 2rem;
+  }
+}

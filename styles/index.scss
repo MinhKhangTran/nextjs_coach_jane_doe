@@ -22,6 +22,9 @@ $font-family-base: "Poppins", sans-serif;
 
 //navbar
 
+// buttons
+$btn-border-radius: 0;
+
 // import variables and mixins files (so you can use them below)
 // any redefined vars above will be incorporated into the files (e.g. in maps)
 @import "~bootstrap/scss/variables";
