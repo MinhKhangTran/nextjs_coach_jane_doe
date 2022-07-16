@@ -1,1 +1,32 @@
 @use "sass:math";
+
+#ueber-mich {
+  margin-top: math.div(64rem, 16);
+  @include md {
+    margin-top: math.div(104rem, 16);
+  }
+  .ueber__wrapper {
+    @include lg {
+      height: 550px;
+    }
+    @include xl {
+      height: 650px;
+    }
+    span {
+      height: 100% !important;
+      img {
+        object-fit: cover;
+      }
+    }
+    .image__wrapper {
+      overflow: hidden;
+    }
+    .text__wrapper {
+      p {
+        width: 90%;
+        max-width: 590px;
+        margin-inline: auto;
+      }
+    }
+  }
+}
