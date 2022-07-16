@@ -1,1 +1,25 @@
 @use "sass:math";
+
+footer {
+  margin-top: math.div(128rem, 16);
+  @include md {
+    margin-top: math.div(208rem, 16);
+  }
+  a {
+    text-decoration: none;
+  }
+  .links__wrapper {
+    margin-bottom: math.div(40rem, 16);
+  }
+  .bottom__part {
+    padding-block: math.div(24rem, 16);
+    border-top: hsla(86, 78%, 27%, 0.25) solid 1px;
+    p,
+    a {
+      font-size: 1rem;
+    }
+    .socials {
+      gap: 2rem;
+    }
+  }
+}
