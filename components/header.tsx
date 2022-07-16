@@ -11,8 +11,8 @@ interface Nav {
 const navArray: Nav[] = [
   { id: 1, title: "Leistungen", url: "/#leistungen" },
   { id: 2, title: "Testimonials", url: "/#testimonials" },
-  { id: 3, title: "Über mich", url: "/#ueber-mich" },
-  { id: 4, title: "Qualifikationen", url: "/#qualifikationen" },
+  { id: 3, title: "Qualifikationen", url: "/#qualifikationen" },
+  { id: 4, title: "Über mich", url: "/#ueber-mich" },
   { id: 5, title: "Kontakt", url: "/#kontakt" },
 ];
 

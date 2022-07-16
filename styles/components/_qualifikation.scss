@@ -1,8 +1,43 @@
 @use "sass:math";
 
-#quali {
+#qualifikationen {
   margin-top: math.div(80rem, 16);
   @include md {
     margin-top: math.div(120rem, 16);
+  }
+  .row {
+    margin-top: math.div(8rem, 16);
+    @include lg {
+      margin-top: math.div(40rem, 16);
+    }
+    .col-md-4 {
+      padding-top: 2rem;
+      @include lg {
+        padding-top: 0;
+      }
+    }
+    h3 {
+      font-size: math.div(20rem, 16);
+      padding-block: 0.5rem 1rem;
+      @include lg {
+        padding-block: 1rem 1.5rem;
+      }
+    }
+  }
+  .image__wrapper--bubble {
+    height: 100px;
+    aspect-ratio: 1;
+    background-color: hsla(86, 78%, 27%, 0.25);
+    border-radius: 50%;
+    @include lg {
+      height: 185px;
+    }
+    img {
+      width: 64px;
+      aspect-ratio: 1;
+      @include lg {
+        width: 104px;
+      }
+    }
   }
 }
