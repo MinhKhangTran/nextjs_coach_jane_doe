@@ -1,1 +1,14 @@
 @use "sass:math";
+
+#kontakt {
+  margin-top: math.div(64rem, 16);
+  @include md {
+    margin-top: math.div(104rem, 16);
+  }
+  .col-lg-7 {
+    margin-top: 2rem;
+    @include md {
+      margin-top: 0;
+    }
+  }
+}

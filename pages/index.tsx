@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import About from "../components/about";
+import Contact from "../components/contact";
 import Hero from "../components/hero";
 import Leistungen from "../components/leistungen";
 import Qualifikationen from "../components/qualifikationen";
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <Testimonials />
       <Qualifikationen />
       <About />
+      <Contact />
     </>
   );
 };
