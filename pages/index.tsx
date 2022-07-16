@@ -1,8 +1,9 @@
-import type { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
+import type { NextPage } from "next";
 import Hero from "../components/hero";
 import Leistungen from "../components/leistungen";
+import Qualifikationen from "../components/qualifikationen";
+import Testimonials from "../components/testimonials";
 import Welcome from "../components/welcome";
-import { getJsonData } from "../utils/tool";
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +11,8 @@ const Home: NextPage = () => {
       <Hero></Hero>
       <Welcome />
       <Leistungen />
+      <Testimonials />
+      <Qualifikationen />
     </>
   );
 };

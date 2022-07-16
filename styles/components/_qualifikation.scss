@@ -1,1 +1,8 @@
 @use "sass:math";
+
+#quali {
+  margin-top: math.div(80rem, 16);
+  @include md {
+    margin-top: math.div(120rem, 16);
+  }
+}

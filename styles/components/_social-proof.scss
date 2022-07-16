@@ -1,1 +1,38 @@
 @use "sass:math";
+
+#testimonials {
+  margin-top: math.div(64rem, 16);
+  @include md {
+    margin-top: math.div(104rem, 16);
+  }
+  p {
+    font-size: math.div(20rem, 16);
+    font-weight: 400;
+    width: 90%;
+    max-width: 800px;
+    margin-inline: auto;
+    padding-block: 1rem 2rem;
+    @include md {
+      font-size: math.div(28rem, 16);
+      padding-block: 2rem 4rem;
+    }
+    @include lg {
+      font-size: math.div(32rem, 16);
+    }
+  }
+  h2 {
+    padding-bottom: 1rem;
+    @include md {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  .slick-dots li {
+    padding-inline: 1rem;
+  }
+  .slick-dots li button:before {
+    font-size: 20px;
+    content: "■";
+    color: $primary;
+  }
+}
