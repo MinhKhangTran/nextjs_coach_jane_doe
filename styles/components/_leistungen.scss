@@ -6,11 +6,33 @@
     margin-top: math.div(104rem, 16);
   }
   .leistung__wrapper {
-    span {
-      height: 100%;
-    }
     @include lg {
       height: 400px;
+    }
+    @include xl {
+      height: 500px;
+    }
+    span {
+      height: 100% !important;
+      img {
+        object-fit: cover;
+      }
+    }
+    .image__wrapper {
+      overflow: hidden;
+    }
+    .text__wrapper {
+      padding-bottom: 2rem;
+    }
+    p {
+      width: 90%;
+      max-width: 590px;
+      margin-inline: auto;
+    }
+  }
+  .leistung__1 {
+    @include md {
+      flex-direction: row-reverse !important;
     }
   }
 }

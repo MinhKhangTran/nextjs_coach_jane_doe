@@ -30,13 +30,13 @@ const leistungArray = [
 const Leistungen = () => {
   return (
     <section id="leistungen" aria-label="Leistung Abschnitt">
-      {leistungArray.map((leistung) => {
+      {leistungArray.map((leistung, index) => {
         return (
           <div
             key={leistung.id}
-            className="d-flex | leistung__wrapper flex-column flex-md-row"
+            className={`d-flex | leistung__wrapper leistung__${index} flex-column flex-md-row`}
           >
-            <div className="w-md-50 w-100">
+            <div className="image__wrapper w-md-50 w-100">
               <Image
                 src={leistung.thumb}
                 alt={leistung.altText}
@@ -45,7 +45,7 @@ const Leistungen = () => {
                 priority
               />
             </div>
-            <div className="w-md-50 w-100 d-flex flex-column justify-content-center">
+            <div className="text__wrapper w-md-50 w-100 d-flex flex-column justify-content-center pt-1 py-md-4 py-lg-0">
               <h2 className="heading-2 text-center text-warning">
                 {leistung.title}
               </h2>
